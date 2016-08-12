@@ -18,10 +18,6 @@ public class JDataStructures
 		
 		for (int i = 0; i < 100; i++)
 			list.addNode(i);
-		
-		
-		print("Dumping list...");
-		print(list.getSize());
 	}
 	
 }

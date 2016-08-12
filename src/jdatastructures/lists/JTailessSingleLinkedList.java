@@ -8,21 +8,27 @@ package jdatastructures.lists;
 public class JTailessSingleLinkedList<T>
 {
 	private JNode<T> head;
-	private int size;
 	
 	public JNode<T> getHead() { return head; }
 	
-	public void setHead(JNode<T> head)
-	{	
-		this.head = head;
+	public int getSize() 
+	{ 
+		JNode<T> pointer = head;
+		int size = 0;
+		
+		while (pointer != null)
+		{
+			size += 1;
+			pointer = pointer.getNextNode();
+		}
+		
+		return size;
 	}
-	
-	public int getSize() { return size; }
 	
 	public void addNode (T value)
 	{
 		//1. create the new node.
-		JNode<T> newNode = new JNode<>(value, null);
+		JNode<T> newNode = new JNode<>(value);
 		
 		// 2. find where the end of the list is
 		if (this.head == null)
@@ -40,9 +46,6 @@ public class JTailessSingleLinkedList<T>
 			
 			placeToInsert.setNextNode(newNode);
 		}
-		
-		//3. increment size;
-		size += 1;
 	}
 	
 	@Override
@@ -61,9 +64,38 @@ public class JTailessSingleLinkedList<T>
 		return builder.toString();
 	}
 	
+	public void removeAll()
+	{
+		this.head = null;
+	}
+	
+	public void removeFirst()
+	{
+		if (head == null)
+			return;
+		
+		this.head = head.getNextNode();
+	}
+	
+	public void removeLast()
+	{
+		
+	
+	}
+	
+	public boolean removeFirstValueOf(T t)
+	{	
+		boolean isSuccessful = false;
+		return isSuccessful;
+	}
+	
+	public boolean removeAllValuesOf(T t)
+	{
+		return false;
+	}
+	
 	public JTailessSingleLinkedList()
 	{
 		this.head = null;
-		this.size = 0;
 	}
 }
