@@ -85,6 +85,6 @@ public class JTailessSingleLinkedListTest
 	@Test
 	public void RemoveFirst_TestFirstIsRemoved()
 	{
-		
-	}
+			
+}
 }

@@ -3,7 +3,9 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/home/robert/Projects/GitProjects/JDataStructures/JDataStructures/src/jdatastructures/JDataStructures.java</file>
+            <file>file:/home/robert/Projects/GitProjects/JDataStructures/src/jdatastructures/lists/JNode.java</file>
+            <file>file:/home/robert/Projects/GitProjects/JDataStructures/src/jdatastructures/lists/JTailessSingleLinkedList.java</file>
+            <file>file:/home/robert/Projects/GitProjects/JDataStructures/test/jdatastructures/lists/JTailessSingleLinkedListTest.java</file>
         </group>
     </open-files>
 </project-private>
